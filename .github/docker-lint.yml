@@ -18,8 +18,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Install hadolint
-      run: "sudo wget -O /bin/hadolint wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v2.10.0/hadolint-Linux-x86_64 \nsudo chmod +x /bin/hadolint\n#magic___^_^___line\n"
-
+      run: "sudo wget -O /bin/hadolint wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v2.7.0/hadolint-Linux-x86_64 \nsudo chmod +x /bin/hadolint\n#magic___^_^___line\n"
     - name: Lint Dockerfile
       run: |
         hadolint Dockerfile
